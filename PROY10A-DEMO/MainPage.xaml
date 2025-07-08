@@ -1,0 +1,89 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="PROY10A_DEMO.MainPage"
+             BackgroundColor="White">
+
+    <ScrollView>
+        <VerticalStackLayout Padding="30" Spacing="20">
+
+            <!-- Encabezado con fondo degradado -->
+            <Grid HeightRequest="150">
+                <Ellipse>
+                    <Ellipse.Fill>
+                        <LinearGradientBrush StartPoint="0,0" EndPoint="1,1">
+                            <GradientStop Color="#3366FF" Offset="0.0"/>
+                            <GradientStop Color="#00CCFF" Offset="1.0"/>
+                        </LinearGradientBrush>
+                    </Ellipse.Fill>
+                </Ellipse>
+                <Label Text="Bienvenido a Mente Rota"
+                       FontSize="28"
+                       TextColor="White"
+                       FontAttributes="Bold"
+                       HorizontalOptions="Center"
+                       VerticalOptions="Center"/>
+            </Grid>
+
+            <!-- Entrada de email -->
+            <Label Text="EMAIL" FontSize="12" TextColor="Gray"/>
+            <Frame CornerRadius="12" BorderColor="#e0e0e0" HasShadow="False" Padding="10,0">
+                <Grid ColumnDefinitions="*,Auto">
+                    <Entry x:Name="emailEntry"
+                           Placeholder="example@gmail.com"
+                           FontSize="14"
+                           TextColor="#333"
+                           Keyboard="Email"
+                           HorizontalOptions="Fill"
+                           Grid.Column="0"/>
+                    <ImageButton Source="email.png"
+                                 WidthRequest="24"
+                                 HeightRequest="24"
+                                 HorizontalOptions="End"
+                                 BackgroundColor="Transparent"
+                                 VerticalOptions="Center"
+                                 Grid.Column="1"/>
+                </Grid>
+            </Frame>
+
+            <!-- Entrada de contraseña -->
+            <Label Text="CONTRASEÑA" FontSize="12" TextColor="Gray"/>
+            <Frame CornerRadius="12" BorderColor="#E0E0E0" HasShadow="False" Padding="10,0">
+                <Grid ColumnDefinitions="*,Auto">
+                    <Entry x:Name="passwordEntry"
+                           Placeholder="********"
+                           IsPassword="True"
+                           FontSize="14"
+                           TextColor="#333"
+                           HorizontalOptions="Fill"
+                           Grid.Column="0"/>
+                    <ImageButton Source="lock_icon.png"
+                                 WidthRequest="24"
+                                 HeightRequest="24"
+                                 BackgroundColor="Transparent"
+                                 HorizontalOptions="End"
+                                 VerticalOptions="Center"
+                                 Grid.Column="1"/>
+                </Grid>
+            </Frame>
+
+            <!-- Botones -->
+            <Button Text="Registrarse"
+                    Clicked="OnRegisterClicked"
+                    BackgroundColor="#3366FF"
+                    TextColor="White"
+                    CornerRadius="12"
+                    FontAttributes="Bold"
+                    Padding="10"/>
+
+            <Button Text="Iniciar Sesión"
+                    Clicked="OnLoginClicked"
+                    BackgroundColor="#00CCFF"
+                    TextColor="White"
+                    CornerRadius="12"
+                    FontAttributes="Bold"
+                    Padding="10"/>
+
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>

@@ -1,0 +1,85 @@
+.vs/
+
+# Archivos de usuario de Visual Studio
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+# Carpetas de compilación
+bin/
+obj/
+[Bb]uild/
+[Ll]og/
+[Ll]ogs/
+
+# Archivos de depuración
+*.pdb
+*.tmp
+*.log
+
+# Archivos de configuración local
+.vs/
+*.dbmdl
+*.db
+
+# Archivos de Xamarin/MAUI
+*.apk
+*.aab
+*.ap_
+*.dex
+*.class
+*.jar
+*.keystore
+*.plist
+*.ipa
+*.xcuserstate
+*.xcworkspace
+*.xcuserdata
+*.xcodeproj
+*.entitlements
+*.xcconfig
+*.xcsettings
+
+# Archivos de Android/iOS generados
+platforms/
+Resources/Raw/
+Resources/drawable*/ 
+Resources/layout/
+Resources/values/
+Resources/mipmap*/
+
+# Archivos de configuración de Firebase o secretos
+firebase-adminsdk.json
+*.env
+*.key
+*.pem
+*.jks
+*.p12
+
+# Archivos de cobertura y pruebas
+TestResult*/
+*.coverage
+*.coveragexml
+*.testsettings
+*.vsmdi
+*.psess
+*.vsp
+*.vspx
+
+# Archivos de herramientas de análisis
+_ReSharper*/
+*.DotSettings.user
+.idea/
+*.sln.iml
+
+# Archivos de publicación
+publish/
+*.publish.xml
+
+# Archivos de sistema
+Thumbs.db
+Desktop.ini
+
+# Firebase credentials
+firebase-adminsdk.json
